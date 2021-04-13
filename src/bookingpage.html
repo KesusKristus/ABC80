@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doktor Tomas bookingpage</title>
+    <link rel="stylesheet" href="css/style_sheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Doktor Tomas startpage</title>
 </head>
 <body>
     <header>
@@ -19,41 +22,45 @@
                 Beskrivning går här
             </p>
         </div>
-        <button class="previous-button"> 
-            Föregående
-        </button>
-        <button class="next-button">
-            Nästa
-        </button>
-        <div class="calander-container">
+        <div class="calender-container">
+            <div class="calender-buttons">
+             <button class="previous-button"> 
+                   Föregående
+               </button>
+              <button class="next-button">
+                  Nästa
+              </button>
+            </div>
             Här ska kalendern vara
         </div>
 
         <div class="popup" id="myForm">
+            <div class="popup-header"></div>
             <h1>Datum (POP-UP RUTA)</h1>
-            <label for="name"><b>Namn</b></label>
-            <input type="text" placeholder="Enter name" name="name" required>
-            <label for="name"><b>Efternamn</b></label>
-            <input type="text" placeholder="Enter name" name="name" required>
-            <label for="email"><b>E-mail</b></label>
-            <input type="text" placeholder="Enter E-mail" name="mail" required>
-            <label for="email"><b>Övrig kommentar</b></label>
-            <input type="text"  name="kommentar">
-            <button type="submit" class="btn">BOKA</button>
-        </div>
-
-        <footer>
-            <button class="back-button">
-                TILLBAKA
-            </button>
-            <div class="progress-container">
-                <div class="progress-bubbles"></div>
-                <div class="progress-bubbles"></div>
-                <div class="progress-bubbles"></div>
-                <div class="progress-bubbles"></div>
-                <div class="progress-bubbles"></div>
+            <div class="popup-items">
+                <label for="name"><b>Namn</b></label>
+                <input type="text" placeholder="Enter name" name="name" required>
+                <label for="name"><b>Efternamn</b></label>
+                <input type="text" placeholder="Enter name" name="name" required>
+                <label for="email"><b>E-mail</b></label>
+                <input type="text" placeholder="Enter E-mail" name="mail" required>
+                <label for="email"><b>Övrig kommentar</b></label>
+                <input type="text"  name="kommentar">
+                <button type="submit" class="btn">BOKA</button>
             </div>
-        </footer>
+        </div>
     </div>
+    <footer>
+        <button class="back-button">
+            TILLBAKA
+        </button>
+        <div class="progress-container">
+            <div class="progress-bubbles"></div>
+            <div class="progress-bubbles"></div>
+            <div class="progress-bubbles"></div>
+            <div class="selected-bubble"></div>
+            <div class="progress-bubbles"></div>
+        </div>
+    </footer>
 </body>
 </html>
