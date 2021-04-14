@@ -36,28 +36,49 @@
 
         <div class="popup" id="myForm">
             <div class="popup-header"></div>
-            <h1 class = "centeredText">Datum (POP-UP RUTA)</h1>
+            <h1 class = "centeredText bluetext" >Datum</h1>
             
-            <div class="popup-items">
+            <div class="popup-items bluetext">
 
                 
                 <div class = "popupSquare">
-                    <label for="name"><b>Namn</b></label>
-                    <label for="name"><b>Efternamn</b></label>
-                    <label for="email"><b>E-mail</b></label>
-                    <label for="name"><b>Telefonnummer</b></label>
-                    
+                    <div class="margintop">
+                        <label for="name"><b>Namn*:</b></label>
+                    </div>
+                    <div class="margintop">                  
+                        <label for="name"><b>Efternamn*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="email"><b>E-mail*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="name"><b>Telefonnummer*:</b></label>
+                    </div>
                 </div>
 
                 <div class = "popupInput">
-                    <input type="text" placeholder="Enter name" name="name" required>
-                    <label for="name"><b>Efternamn</b></label>
-                    <label for="email"><b>E-mail</b></label>
-                    <label for="name"><b>Telefonnummer</b></label>
-                  
+                    <div class="margintop5">
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                    <div class="margintop5">
+                        <input class="input" type="text"  name="name" required>
+                    </div>
+                    <div class="margintop5">
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                    <div class="margintop5">
+                        <input class="input" type="text" name="name" required>
+                    </div>
                 </div>
-
-                <button type="submit" class="btn">BOKA</button>
+            </div>
+            <div class = "kommentar bluetext">
+                <label for="name" style="margin-left:25%;"><b>Övrig kommentar:</b></label>
+            </div>
+            <div>
+                <input class="input" type="text" name="name" required style="height:12vh;width:15vw;margin-left:25%">
+            </div>
+            <div class="vertical-center">
+                <button type="submit vertical-center" class="btn">BOKA</button>
             </div>
         </div>
     </div>
