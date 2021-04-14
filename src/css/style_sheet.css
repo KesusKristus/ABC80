@@ -148,5 +148,27 @@ footer{
 }
 
 .popup-items{
-    background-color: #FFFF99;
+    background-color: #ff9999;
+    flex-direction: row; 
+    
+}
+
+.nameSuare{
+    
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.popupSquare {
+    flex-direction:column ;
+    background-color: #ff99f7;
+
+}
+
+.popupInput {
+    flex-direction:column ;
+    background-color: #99ffb8;
+  
 }

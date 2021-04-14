@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style_sheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <title>Doktor Tomas startpage</title>
+    <title>Doktor Tomas bookingpage</title>
 </head>
 <body>
     <header>
@@ -36,16 +36,27 @@
 
         <div class="popup" id="myForm">
             <div class="popup-header"></div>
-            <h1>Datum (POP-UP RUTA)</h1>
+            <h1 class = "centeredText">Datum (POP-UP RUTA)</h1>
+            
             <div class="popup-items">
-                <label for="name"><b>Namn</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
-                <label for="name"><b>Efternamn</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
-                <label for="email"><b>E-mail</b></label>
-                <input type="text" placeholder="Enter E-mail" name="mail" required>
-                <label for="email"><b>Övrig kommentar</b></label>
-                <input type="text"  name="kommentar">
+
+                
+                <div class = "popupSquare">
+                    <label for="name"><b>Namn</b></label>
+                    <label for="name"><b>Efternamn</b></label>
+                    <label for="email"><b>E-mail</b></label>
+                    <label for="name"><b>Telefonnummer</b></label>
+                    
+                </div>
+
+                <div class = "popupInput">
+                    <input type="text" placeholder="Enter name" name="name" required>
+                    <label for="name"><b>Efternamn</b></label>
+                    <label for="email"><b>E-mail</b></label>
+                    <label for="name"><b>Telefonnummer</b></label>
+                  
+                </div>
+
                 <button type="submit" class="btn">BOKA</button>
             </div>
         </div>
