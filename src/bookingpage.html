@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style_sheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <title>Doktor Tomas startpage</title>
+    <title>Doktor Tomas bookingpage</title>
 </head>
 <body>
     <header>
@@ -36,17 +36,49 @@
 
         <div class="popup" id="myForm">
             <div class="popup-header"></div>
-            <h1>Datum (POP-UP RUTA)</h1>
-            <div class="popup-items">
-                <label for="name"><b>Namn</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
-                <label for="name"><b>Efternamn</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
-                <label for="email"><b>E-mail</b></label>
-                <input type="text" placeholder="Enter E-mail" name="mail" required>
-                <label for="email"><b>Övrig kommentar</b></label>
-                <input type="text"  name="kommentar">
-                <button type="submit" class="btn">BOKA</button>
+            <h1 class = "centeredText bluetext" >Datum</h1>
+            
+            <div class="popup-items bluetext">
+
+                
+                <div class = "popupSquare">
+                    <div class="margintop">
+                        <label for="name"><b>Namn*:</b></label>
+                    </div>
+                    <div class="margintop">                  
+                        <label for="name"><b>Efternamn*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="email"><b>E-mail*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="name"><b>Telefonnummer*:</b></label>
+                    </div>
+                </div>
+
+                <div class = "popupInput">
+                    <div class="margintop5">
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                    <div class="margintop5">
+                        <input class="input" type="text"  name="name" required>
+                    </div>
+                    <div class="margintop5">
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                    <div class="margintop5">
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                </div>
+            </div>
+            <div class = "kommentar bluetext">
+                <label for="name" style="margin-left:25%;"><b>Övrig kommentar:</b></label>
+            </div>
+            <div>
+                <input class="input" type="text" name="name" required style="height:12vh;width:15vw;margin-left:25%">
+            </div>
+            <div class="vertical-center">
+                <button type="submit vertical-center" class="btn">BOKA</button>
             </div>
         </div>
     </div>
