@@ -9,7 +9,6 @@ header{
     background-color: #4267B2;
     height : 10vh;
     width : 100vw;
-
 }
 
 a {
@@ -212,3 +211,8 @@ footer{
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+
+.selected{
+    background-color: #4267B2;
+    color: white;
+}
