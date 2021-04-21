@@ -1,4 +1,4 @@
-import jsonData from "../jsonDataLäkarmottagning"
+import jsonData from "../jsonDataLakarmottagning.js"
 
 const catContainer = document.getElementById("category-container");
 
