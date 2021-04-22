@@ -1,4 +1,4 @@
-import jsonData from "../jsonDataVaccinationer"
+import jsonData from "../jsonDataVaccinationer.js"
 
 const catContainer = document.getElementById("category-container");
 

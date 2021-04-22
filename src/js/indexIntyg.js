@@ -1,4 +1,4 @@
-import jsonData from "./jsonDataIntyg"
+import jsonData from "../jsonDataIntyg.js"
 
 const catContainer = document.getElementById("category-container");
 
