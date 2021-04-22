@@ -1,7 +1,16 @@
+/**
+ * @author Viktor, Nils, Salvija & Malin
+ * This is a class that generates the categories on the Läkarmottagning-page, as well as the dynamic descriptions. 
+ */
+
 import jsonData from "../jsonDataLakarmottagning.js"
 
 const catContainer = document.getElementById("category-container");
 
+
+/**
+ * This for-loop takes the data from the JSON file and creates categories from that. 
+ */
 for (let index = 0; index < jsonData.categories.length; index++) {
     const category = jsonData.categories[index];
     const catDiv = document.createElement("div");
@@ -23,6 +32,10 @@ for (let index = 0; index < jsonData.categories.length; index++) {
     catContainer.appendChild(catDiv);
 }
 
+
+/**
+ * This function sets the title and description for the category. It also sets a category to selected when it's clicked. 
+ */
 const handleClick = (category) => {
     document.getElementById("description-title").innerHTML = category.title;
     document.getElementById("description-text").innerHTML = category.desc;
