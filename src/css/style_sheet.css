@@ -201,9 +201,9 @@ footer{
 }
 
 .popup{
-    display: true; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     margin: auto;
    /* left: 25vw;
     top: 25vh; */
@@ -286,3 +286,57 @@ footer{
     background-color: #4267B2;
     color: white;
 }
+
+
+.calender-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+.next-button{
+    width: 120px;
+    height: 30px;
+    background-color: #4267B2;
+    color : #ffff;
+}
+
+.calender-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-start;
+    width: 60vw;
+    margin-right: 5vw;
+}
+
+.calender-day{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 90%;
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.day-container{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.day-text{}
