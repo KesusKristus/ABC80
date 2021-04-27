@@ -48,10 +48,17 @@ a {
     margin: 20px;
 }
 
+.categories:hover{
+    background-color: #4267B2;
+    color: white;
+}
+
+
+
  .category-name{
     margin-left: 5%;
-/*     margin-bottom: auto;
-    margin-top: auto; */
+     margin-bottom: auto;
+    margin-top: auto; 
 } 
 
 .category{
@@ -91,6 +98,14 @@ a {
     border: none;
 }
 
+.book-button:hover{
+    background-color:#5687e9;
+}
+
+.book-button:active{
+    background-color:#35528d;
+}
+
 .description-title{
     margin-top: 10vh;
 }
@@ -116,6 +131,25 @@ footer{
     font-weight: 700;
     font-size: 0.8em;
     border: none;
+}
+
+.back-button:hover{
+    background-color:#5687e9;
+}
+
+.back-button:active{
+    background-color:#35528d;
+
+
+}
+
+.back-button:active:after{
+    background-color:#35528d;
+    padding: 0;
+    margin: 0;  
+    opacity: 1;   
+    transition: 0s;
+
 }
 
 .progress-container{
@@ -146,11 +180,15 @@ footer{
 
 
 .DrTlogo{
-    margin-left:3%;
+    margin-left:5%;
     width: 110px;
     height: 70px;
-    margin-top:auto;
+    margin-top:0.15%;
     margin-bottom:auto;
+}
+
+.DrTlogo:hover{
+    opacity: 70%;
 }
 
 .calender-container{
