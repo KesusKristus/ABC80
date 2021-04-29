@@ -1,79 +1,76 @@
 export default {
     "categories": [
         {
-            "title": "Bältros",
-            "desc": "Vi är en privat läkarmottagning ansluten till västra götalandsregion. ",
-            "href": "./LäkarmottagningPage.html"
+            "title": "Bältros (Zostavax)",
+            "desc": "1490 kr"
         },
         {
-            "title": "Gula febern",
-            "desc": "Vi är en privat läkarmottagning ansluten till västra götalandsregion. \nDu är välkommen att besöka oss oavsett vilken vårdcentral du är listad på. \nDet kostar 300 kr för läkarbesök 100 kr för distriktsköterskebesök barn under 20 år och äldre över 85 år gratis, frikort gäller.",
+            "title": "Gula febern (Stamaril)",
+            "desc": "380 kr",
         },
         {
             "title": "Gulsot - hepatit A och B (Twinrix)",
-            "desc": "jag heter malin",
-            "href" : "./IntygPage.html"
+            "desc": " Vuxen 550 kr <br> Barn 520 kr",
         },
         {
-            "title": "Hjärnhinneinflammation - meningit",
-            "desc": "gabriel e dum",
-            "href" : "./VaccinationerPage.html"
+            "title": "Hjärnhinneinflammation - meningit (Nimenrix)",
+            "desc": "650 kr",
         },
         {
-            "title": "Influensa",
-            "desc": "tjena"
+            "title": "Influensa (Vaxigrip)",
+            "desc": "180 kr"
         },
         {
-            "title": "Influensa (riskgrupp)",
-            "desc": "jag svettas"
+            "title": "Influensa (Vaxigrip) riskgrupp",
+            "desc": "100"
         },
         {
-            "title": "Japansk encefalit",
-            "desc": "jag svettas"
+            "title": "Japansk encefalit (Ixiaro)",
+            "desc": "1100 kr"
         },
         {
-            "title": "Kolera (Turistdiarré) 1 dos",
-            "desc": "jag svettas"
+            "title": "Kolera (Turistdiarré) (Dukoral) 1 dos",
+            "desc": "350 kr"
         },
         {
-            "title": "Kolera (Turistdiarré) 2 doser",
-            "desc": "jag svettas"
+            "title": "Kolera (Turistdiarré) (Dukoral) 2 doser",
+            "desc": "480 kr"
         },
         {
             "title": "Lunginflammation (Prevenar 13)",
-            "desc": "jag svettas"
+            "desc": "750 kr"
         },
         {
             "title": "Lunginflammation (Pneumevax)",
-            "desc": "jag svettas"
+            "desc": "360 kr"
         },
         {
-            "title": "Mässling, påssjuka, röda hund",
-            "desc": "jag svettas"
+            "title": "Mässling, påssjuka, röda hund (Priorix)",
+            "desc": "320 kr"
         },
         {
             "title": "Recept malaria medicin",
-            "desc": "jag svettas"
+            "desc": "150 kr"
         },
         {
-            "title": "Rotavirus",
-            "desc": "jag svettas"
+            "title": "Rotavirus (Rotarix)",
+            "desc": "690 kr"
         },
         {
-            "title": "Stelkramp, difteri, kikhosta",
-            "desc": "jag svettas"
+            "title": "Stelkramp, difteri, kikhosta (Boostrix)",
+            "desc": "300 kr"
         },
         {
             "title": "TBE fästingburen hjärnhinneinflammation",
-            "desc": "jag svettas"
+            "desc": "(FSME-immun) barn 350 kr <br> (FSME-immun) vuxen 370 kr"
         },
         {
-            "title": "Tyfoidfeber",
-            "desc": "jag svettas"
+            "title": "Tyfoidfeber (Typhim)",
+            "desc": "300 kr"
         },
         {
-            "title": "Vattkoppar",
-            "desc": "jag svettas"
+            "title": "Vattkoppor (Varilrix)",
+            "desc": "600 kr"
         },
     ]
 }
