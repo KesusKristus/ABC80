@@ -1,9 +1,17 @@
 // Hämtar paketen
 const express = require('express')
+const cors = require('cors')
 const fs = require('fs')
 
 // Initierar servern
 const app = express()
+
+const corsOptions = {
+  credentials: true,
+  origin: '*',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions))
 
 // Ser till att servern kan se och använda datan som skickas i request
 app.use(express.json())
@@ -34,7 +42,7 @@ app.post('/booking', (req, res) => {
   res.status(201).send(bookings)
 })
 
-// Hämta bara en boking
+// Hämta bara en boking localhost:3000/booking/1
 app.get('/booking/:id', (req, res) => {
   const bookings = require('./db/Bookings.json')
 
