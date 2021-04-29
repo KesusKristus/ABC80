@@ -21,7 +21,7 @@ export default {
         },
         {
             "title": "Migrän",
-            "desc": "tjena"
+            "desc": "Temp"/*"Medicinsk Botox vid migrän. Botox är en effektiv, enkel och erkänd behandlingsmetod för att behandla smärta vid migrän. Med hjälp av botox kan 7 av 10 få hjälp. Botox blockerar de nervsignaler som får muskler att spännas. Genom att minska muskelspänning och stoppa smärtimpulser kan botox neutralisera viktiga faktorer till migrän. Behandlingen går fort att utföra med tunna nålar och smärtan i samband med detta är i regel minimal. Behandlingen föregås av ett förberedande undersökningsbesök för att säkerställa diagnosen och gå igenom behandlingsalternativ. Behandlingseffekten kvarstår upp till 4 månader. Botox är en mycket försvagad variant av botulinumtoxin och har använts i mer än 20 år i sjukvården."*/
         },
         {
             "title": "Överdriven svettning",
