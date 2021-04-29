@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_sheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="module" src="js/bookingPage.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Doktor Tomas bookingpage</title>
 </head>
@@ -22,25 +23,49 @@
                 Beskrivning går här
             </p>
         </div>
-        <div class="calender-container">
-            <div class="calender-buttons">
-             <button class="previous-button"> 
-                   Föregående
-               </button>
-              <button class="next-button">
-                  Nästa
+        <div class="column">
+        <div class="calender-buttons">
+            <button class="next-button"> 
+                  Föregående
               </button>
-            </div>
-            Här ska kalendern vara
+             <button class="next-button">
+                 Nästa
+             </button>
+           </div>
+        <div class="calender-container">
+              <div class="calender-day" id="monday" >
+                  <div class="day-container">
+                      <h2 class="day-text">Måndag</h2>
+                  </div>
+              </div>
+              <div class="calender-day" id="tuesday" >
+                <div class="day-container">
+                    <h2 class="day-text">Tisdag</h2>
+                </div>
+              </div>
+              <div class="calender-day" id="wednesday" >
+                <div class="day-container">
+                    <h2 class="day-text">Onsdag</h2>
+                </div>
+              </div>
+              <div class="calender-day" id="thursday" >
+                <div class="day-container">
+                    <h2 class="day-text">Torsdag</h2>
+                </div>
+              </div>
+              <div class="calender-day" id="friday" >
+                <div class="day-container">
+                    <h2 class="day-text">Fredag</h2>
+                </div>
+              </div>
         </div>
+    </div>
 
         <div class="popup" id="myForm">
             <div class="popup-header"></div>
             <h1 class = "centeredText bluetext" >Datum</h1>
             
             <div class="popup-items bluetext">
-
-                
                 <div class = "popupSquare">
                     <div class="margintop">
                         <label for="name"><b>Namn*:</b></label>

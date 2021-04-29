@@ -1,0 +1,31 @@
+[
+    {"title":"Vaccination",
+        "weekNr": "17",
+        "weekDay": "Monday",
+        "startTimeHour": 8,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id":1
+    },
+
+    {"title":"Överdriven Svettning",
+        "weekNr": "17",
+        "weekDay": "Tuesday",
+        "startTimeHour": 8,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id":1
+    },
+
+    {"title":"Hälsokontroll",
+        "weekNr": "17",
+        "weekDay": "Monday",
+        "startTimeHour": 9,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id":1
+    }
+]
