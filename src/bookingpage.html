@@ -61,7 +61,7 @@
         </div>
     </div>
 
-        <div class="popup" id="myForm">
+        <div class="popup hidden" id="myForm">
             <div class="popup-header"></div>
             <h1 class = "centeredText bluetext" >Datum</h1>
             
@@ -83,16 +83,16 @@
 
                 <div class = "popupInput">
                     <div class="margintop5">
-                        <input class="input" type="text" name="name" required>
+                        <input class="input" type="text" name="name" required id="firstName">
                     </div>
                     <div class="margintop5">
-                        <input class="input" type="text"  name="name" required>
+                        <input class="input" type="text"  name="name" required id="lastName">
                     </div>
                     <div class="margintop5">
-                        <input class="input" type="text" name="name" required>
+                        <input class="input" type="text" name="name" required id="eMail">
                     </div>
                     <div class="margintop5">
-                        <input class="input" type="text" name="name" required>
+                        <input class="input" type="text" name="name" required id="phoneNumber">
                     </div>
                 </div>
             </div>
@@ -100,10 +100,10 @@
                 <label for="name" style="margin-left:25%;"><b>Övrig kommentar:</b></label>
             </div>
             <div>
-                <input class="input" type="text" name="name" required style="height:12vh;width:15vw;margin-left:25%">
+                <input class="input" type="text" name="name" required style="height:12vh;width:15vw;margin-left:25%" id="comment">
             </div>
             <div class="vertical-center">
-                <button type="submit vertical-center" class="btn">BOKA</button>
+                <button type="submit" class="btn" id="bookBtn">BOKA</button>
             </div>
         </div>
     </div>
