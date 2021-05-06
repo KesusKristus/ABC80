@@ -1,5 +1,5 @@
 
-let selectedBooking;
+let newBooking;
 
 window.onload = async () => {
   const res = await fetch('http://localhost:3000/bookings', {
@@ -11,7 +11,7 @@ window.onload = async () => {
 
   const bookings = await res.json()
 
-  const availableBookings = bookings.filter(booking => !booking.booked)
+//  const availableBookings = bookings.filter(booking => !booking.booked)
 
   // Samma gamla skit för att generara sakerna
 
@@ -21,8 +21,8 @@ window.onload = async () => {
   const thursdayCont = document.getElementById("thursday");
   const fridayCont = document.getElementById("friday");
 
-  for (let index = 0; index < availableBookings.length; index++) {
-    const booking = availableBookings[index];
+  for (let index = 0; index < bookings.length; index++) {
+    const booking = bookings[index];
     const bookingDiv = document.createElement("div");
     //bookingDiv.className = "categories";
     bookingDiv.id = booking.title;
@@ -68,29 +68,32 @@ window.onload = async () => {
 
 const handleBook = async (e) => {
   e.preventDefault()
-  const firstName = document.getElementById("firstName");
-  const lastName = document.getElementById("lastName");
-  const email = document.getElementById("eMail");
-  const phoneNumber = document.getElementById("phoneNumber");
+  const day = document.getElementById("selectedDay");
+  const startTimeHour = document.getElementById("startTimeHour");
+  const startTimeMinute = document.getElementById("startTimeMinute");
+  const duration = document.getElementById("selectedDuration");
+  const category = document.getElementById("selectedCategory");
   const comment = document.getElementById("comment");
 
-  selectedBooking.booked = true;
-  selectedBooking.firstName = firstName.value;
-  selectedBooking.lastName = lastName.value;
-  selectedBooking.email = email.value;
-  selectedBooking.phoneNumber = phoneNumber.value;
-  selectedBooking.comment = comment.value;
+  newBooking.booked = false;
+  newBooking.weekDay = day.value;
+  newBooking.startTimeHour = startTimeHour.value;
+  newBooking.startTimeMinute = startTimeMinute.value;
+  newBooking.duration = duration.value;
+  newBooking.title = category.value;
+  newBooking.comment = comment.value;
+
 
   const res = await fetch('http://localhost:3000/booking', {
-    method: 'PUT',
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
     },
-    body: JSON.stringify(selectedBooking)
+    body: JSON.stringify(newBooking)
   })
   
-  if (res.status === 200) {
-    alert('Tid Bokad!')
+  if (res.status === 201) {
+    alert('Tid Tillagd')
     window.location.reload()
   }
 }
@@ -105,6 +108,6 @@ const handleClick = (booking = undefined) => {
     popup.className = "popup";
   }
 
-  selectedBooking = booking;
+  newBooking = booking;
 }
 

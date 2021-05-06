@@ -203,7 +203,6 @@ footer{
 }
 
 .popup{
-    display: none; 
     position: fixed; 
     z-index: 1; 
     margin: auto;
@@ -217,7 +216,14 @@ footer{
     background-color: #FFFFFF;
 }
 
+.hidden {
+    display: none;
+}
+
 .popup-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     background-color: #4267B2;
     height: 10%;
@@ -354,6 +360,14 @@ footer{
 
 }
 
+.closeIcon{
+    height: 32px;
+    width: 32px;
+    /* padding-left: 90%; */
+    margin-left: 90%;
+    margin-right: 10%;
+
+}
 
 .day-text{
     color: white;
