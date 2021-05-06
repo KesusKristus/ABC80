@@ -2,39 +2,39 @@ export default {
     "categories": [
         {
             "title": "Adoptionsintyg",
-            "desc": "Vi är en privat läkarmottagning ansluten till västra götalandsregion. ",
+            "desc": "1300 kr",
         },
         {
             "title": "Au-Pair intyg",
-            "desc": "Vi är en privat läkarmottagning ansluten till västra götalandsregion. \nDu är välkommen att besöka oss oavsett vilken vårdcentral du är listad på. \nDet kostar 300 kr för läkarbesök 100 kr för distriktsköterskebesök barn under 20 år och äldre över 85 år gratis, frikort gäller.",
+            "desc": "1000 – 1300 kr (beroende på vilka prover och tester behövs)",
         },
         {
-            "title": "Dykintyg",
-            "desc": "jag heter malin",
+            "title": "Dykintyg (SCUBA)",
+            "desc": "1000 kr (ev. vid behov EKG, Lungröntgen kan tillkomma)",
         },
         {
             "title": "Fallskärmsintyg",
-            "desc": "gabriel e dum",
+            "desc": "1000 kr (ev. EKG kan tillkomma)",
         },
         {
             "title": "Inställd resa",
-            "desc": "tjena"
+            "desc": "400 kr",
         },
         {
             "title": "Intyg medföra mediciner vid resa",
-            "desc": "jag svettas"
+            "desc": "400 kr",
         },
         {
             "title": "Intyg för studier utomlands",
-            "desc": "jag svettas"
+            "desc": "1000 kr (ev. PPD (tuberkulös) test för 250 kr kan tillkomma)",
         },
         {
             "title": "Kuskintyg",
-            "desc": "jag svettas"
+            "desc": "1000 kr",
         },
         {
-            "title": "Sjöfart",
-            "desc": "jag svettas"
+            "title": "Sjöfartsintyg",
+            "desc": "1050 kr",
         },
     ]
 }

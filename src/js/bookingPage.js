@@ -1,3 +1,4 @@
+
 let selectedBooking;
 
 window.onload = async () => {
@@ -106,3 +107,4 @@ const handleClick = (booking = undefined) => {
 
   selectedBooking = booking;
 }
+

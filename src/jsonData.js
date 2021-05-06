@@ -21,7 +21,7 @@ export default {
         },
         {
             "title": "Migrän",
-            "desc": "tjena"
+            "desc": "Migränbehandling vid kronisk migrän 2000 kr (Läkemedelskostnad tillkommer. För rabattgodkända användningsområden gällande botulinumtoxin, t.ex kronisk migrän, överdriven svettning betalar patienten enligt apotekets högkostnadsskydd, max 2300 kr:-/år)"
         },
         {
             "title": "Överdriven svettning",

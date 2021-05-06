@@ -10,7 +10,9 @@ header{
     height : 10vh;
     width : 100vw;
 }
-
+/*
+Fan är a?
+*/
 a {
     color: #000000;
     text-decoration: none;
@@ -41,15 +43,15 @@ a {
     flex-direction: row;
     display: flex;
     background-color: #E5E5E5;
-    height: 8vh;
+    height: 10vh;
     width: 35vw;
     border: 2px #4267B2 solid;
     border-radius: 5px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .categories:hover{
-    background-color: #4267B2;
+    background-color: #5687e9;
     color: white;
 }
 
@@ -60,7 +62,9 @@ a {
      margin-bottom: auto;
     margin-top: auto; 
 } 
-
+/*
+Bilder? ändra namn
+*/
 .category{
     width:65px;
     height: 60px;
@@ -181,8 +185,8 @@ footer{
 
 .DrTlogo{
     margin-left:5%;
-    width: 110px;
-    height: 70px;
+    width: 7vw;
+    height: 9vh ;
     margin-top:0.15%;
     margin-bottom:auto;
 }
@@ -290,6 +294,9 @@ footer{
     color: white;
 }
 
+.subtitle-div{
+    margin-left: 2.5vw;
+}
 
 .calender-buttons{
     display: flex;
