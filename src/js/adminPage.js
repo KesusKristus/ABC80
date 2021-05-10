@@ -9,7 +9,10 @@ window.onload = async () => {
     },
   })
 
-  const bookings = await res.json()
+  let bookings = await res.json()
+
+  bookings = bookings.sort((a, b) => a .startTimeHour - b.startTimeHour)
+  console.log(bookings)
 
 //  const availableBookings = bookings.filter(booking => !booking.booked)
 
@@ -26,6 +29,7 @@ window.onload = async () => {
     const bookingDiv = document.createElement("div");
     //bookingDiv.className = "categories";
     bookingDiv.id = booking.title;
+    bookingDiv.className = "timeslot"
 
     const bookingTitle = document.createElement("h2");
     const bookingTime = document.createElement("p");
@@ -36,23 +40,23 @@ window.onload = async () => {
     bookingDiv.appendChild(bookingTitle);
     bookingDiv.appendChild(bookingTime);
 
-    if(booking.weekDay == "Monday"){
+    if(booking.weekDay == "Måndag"){
 
       mondayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Tuesday"){
+    } else if(booking.weekDay == "Tisdag"){
 
       tuesdayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Wednesday"){
+    } else if(booking.weekDay == "Onsdag"){
 
       wednesdayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Thursday"){
+    } else if(booking.weekDay == "Torsdag"){
 
       thursdayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Friday"){
+    } else if(booking.weekDay == "Fredag"){
 
       fridayCont.appendChild(bookingDiv);
 
@@ -60,13 +64,17 @@ window.onload = async () => {
 
     bookingDiv.addEventListener("click", () => handleClick(booking))
 
+
   }
 
-  document.getElementById("bookBtn").addEventListener("click", (e) => handleBook(e))
+  document.getElementById("closeIcon").addEventListener("click", () => handleClick())
+
+  document.getElementById("postBtn").addEventListener("click", (e) => handlePost(e))
+
 
 }
 
-const handleBook = async (e) => {
+const handlePost = async (e) => {
   e.preventDefault()
   const day = document.getElementById("selectedDay");
   const startTimeHour = document.getElementById("startTimeHour");
@@ -100,12 +108,12 @@ const handleBook = async (e) => {
 
 const handleClick = (booking = undefined) => {
 
-  const popup = document.getElementById("myForm")
-
-  if (popup.className == "popup") {
-    popup.className = "popup hidden";
+  const lightbox = document.getElementById("lightbox")
+  
+  if (lightbox.className == "lightbox") {
+    lightbox.className = "lightbox hidden";
   } else {
-    popup.className = "popup";
+    lightbox.className = "lightbox"
   }
 
   newBooking = booking;

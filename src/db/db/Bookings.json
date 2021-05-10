@@ -1,2 +1,117 @@
-
-[{"title":"Vaccination","weekNr":"17","weekDay":"Monday","startTimeHour":8,"startTimeMinute":0,"duration":1,"booked":false,"id":1},{"title":"Överdriven Svettning","weekNr":"17","weekDay":"Tuesday","startTimeHour":8,"startTimeMinute":0,"duration":1,"booked":true,"id":2,"firstName":"hej","lastName":"hej","email":"saddsa","phoneNumber":"dadsa","comment":"dsadsa"},{"title":"Hälsokontroll","weekNr":"17","weekDay":"Monday","startTimeHour":9,"startTimeMinute":0,"duration":1,"booked":false,"id":3},{"title":"Hälsokontroll","weekNr":"17","weekDay":"Friday","startTimeHour":14,"startTimeMinute":0,"duration":1,"booked":false,"id":4},{"title":"Hälsokontroll","weekNr":"17","weekDay":"Thursday","startTimeHour":15,"startTimeMinute":0,"duration":1,"booked":false,"id":5},{"title":"Hälsokontroll","weekNr":"17","weekDay":"Wednesday","startTimeHour":10,"startTimeMinute":0,"duration":1,"booked":false,"id":6},{"title":"Vaccination","weekNr":"17","weekDay":"Wednesday","startTimeHour":8,"startTimeMinute":0,"duration":1,"booked":false,"id":7}]
+[
+    {
+        "title": "Vaccination",
+        "weekNr": "17",
+        "weekDay": "Måndag",
+        "startTimeHour": 8,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id": 1
+    },
+    {
+        "title": "Överdriven Svettning",
+        "weekNr": "17",
+        "weekDay": "Tisdag",
+        "startTimeHour": 8,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": true,
+        "id": 2,
+        "firstName": "hej",
+        "lastName": "hej",
+        "email": "saddsa",
+        "phoneNumber": "dadsa",
+        "comment": "dsadsa"
+    },
+    {
+        "title": "Hälsokontroll",
+        "weekNr": "17",
+        "weekDay": "Måndag",
+        "startTimeHour": 9,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id": 3
+    },
+    {
+        "title": "Hälsokontroll",
+        "weekNr": "17",
+        "weekDay": "Fredag",
+        "startTimeHour": 14,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id": 4
+    },
+    {
+        "title": "Hälsokontroll",
+        "weekNr": "17",
+        "weekDay": "Torsdag",
+        "startTimeHour": 15,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id": 5
+    },
+    {
+        "title": "Hälsokontroll",
+        "weekNr": "17",
+        "weekDay": "Onsdag",
+        "startTimeHour": 10,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id": 6
+    },
+    {
+        "title": "Vaccination",
+        "weekNr": "17",
+        "weekDay": "Onsdag",
+        "startTimeHour": 8,
+        "startTimeMinute": 0,
+        "duration": 1,
+        "booked": false,
+        "id": 7
+    },
+    {
+        "title": "Intyg",
+        "weekNr": "17",
+        "weekDay": "Fredag",
+        "startTimeHour": "16",
+        "startTimeMinute": "00",
+        "duration": "15",
+        "booked": false,
+        "id": 8
+    },
+    {
+        "title": "Intyg",
+        "weekNr": "17",
+        "weekDay": "Onsdag",
+        "startTimeHour": "15",
+        "startTimeMinute": "45",
+        "duration": "30",
+        "booked": false,
+        "id": 9
+    },
+    {
+        "title": "Migrän",
+        "weekNr": "17",
+        "weekDay": "Fredag",
+        "startTimeHour": "15",
+        "startTimeMinute": "00",
+        "duration": "15",
+        "booked": false,
+        "id": 10
+    },
+    {
+        "title": "Vaccination",
+        "weekNr": "17",
+        "weekDay": "Tisdag",
+        "startTimeHour": "12",
+        "startTimeMinute": "00",
+        "duration": "30",
+        "booked": false,
+        "id": 11
+    }
+]

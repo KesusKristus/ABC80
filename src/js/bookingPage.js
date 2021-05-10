@@ -26,6 +26,7 @@ window.onload = async () => {
     const bookingDiv = document.createElement("div");
     //bookingDiv.className = "categories";
     bookingDiv.id = booking.title;
+    bookingDiv.className = "timeslot"
 
     const bookingTitle = document.createElement("h2");
     const bookingTime = document.createElement("p");
@@ -36,23 +37,23 @@ window.onload = async () => {
     bookingDiv.appendChild(bookingTitle);
     bookingDiv.appendChild(bookingTime);
 
-    if(booking.weekDay == "Monday"){
+    if(booking.weekDay == "Måndag"){
 
       mondayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Tuesday"){
+    } else if(booking.weekDay == "Tisdag"){
 
       tuesdayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Wednesday"){
+    } else if(booking.weekDay == "Onsdag"){
 
       wednesdayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Thursday"){
+    } else if(booking.weekDay == "Torsdag"){
 
       thursdayCont.appendChild(bookingDiv);
 
-    } else if(booking.weekDay == "Friday"){
+    } else if(booking.weekDay == "Fredag"){
 
       fridayCont.appendChild(bookingDiv);
 
