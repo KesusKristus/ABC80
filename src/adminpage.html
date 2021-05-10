@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_sheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="module" src="js/adminPage.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Doktor Tomas admingpage</title>
 </head>
+
 <body>
     <header>
         <img src="" alt="" class="Dr.T-logo">
@@ -21,140 +24,144 @@
             <p class="description-text">
                 Ändra, boka och avboka tider
             </p>
-            <button class="book-button">
+            <button class="book-button" id="addTimeBtn">
                 LÄGG TILL TID
             </button>
         </div>
 
         <div class="column">
             <div class="calender-buttons">
-                <button class="next-button"> 
-                      Föregående
-                  </button>
-                 <button class="next-button">
-                     Nästa
-                 </button>
-               </div>
+                <button class="next-button">
+                    Föregående
+                </button>
+                <button class="next-button">
+                    Nästa
+                </button>
+            </div>
             <div class="calender-container">
-                  <div class="calender-day" id="monday" >
-                      <div class="day-container">
-                          <h2 class="day-text">Måndag</h2>
-                      </div>
-                  </div>
-                  <div class="calender-day" id="tuesday" >
+                <div class="calender-day" id="monday">
+                    <div class="day-container">
+                        <h2 class="day-text">Måndag</h2>
+                    </div>
+                </div>
+                <div class="calender-day" id="tuesday">
                     <div class="day-container">
                         <h2 class="day-text">Tisdag</h2>
                     </div>
-                  </div>
-                  <div class="calender-day" id="wednesday" >
+                </div>
+                <div class="calender-day" id="wednesday">
                     <div class="day-container">
                         <h2 class="day-text">Onsdag</h2>
                     </div>
-                  </div>
-                  <div class="calender-day" id="thursday" >
+                </div>
+                <div class="calender-day" id="thursday">
                     <div class="day-container">
                         <h2 class="day-text">Torsdag</h2>
                     </div>
-                  </div>
-                  <div class="calender-day" id="friday" >
+                </div>
+                <div class="calender-day" id="friday">
                     <div class="day-container">
                         <h2 class="day-text">Fredag</h2>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="popup" id="myForm">
-        <div class="popup-header">
-            <img src="img\close-icon.png" alt="" class="closeIcon">
-        </div>
-        <h1 class = "centeredText bluetext" >Datum</h1>
-    
-        <div class="popup-items bluetext">
-            <div class = "popupSquare">
-                <div class="margintop">
-                    <label for="name"><b>Dag*:</b></label>
-                </div>
-                <div class="margintop">                  
-                    <label for="name"><b>Starttid*:</b></label>
-                </div>
-                <div class="margintop">
-                    <label for="email"><b>Längd*:</b></label>
-                </div>
-                <div class="margintop">
-                    <label for="name"><b>Kategori*:</b></label>
-                </div>
-            </div>
 
-            <div class = "popupInput">
-                <div class="margintop5">
-                    <select name="day" id="selectedDay">
-                        <option value="Måndag">Måndag</option>
-                        <option value="Tisdag">Tisdag</option>
-                        <option value="Onsdag">Onsdag</option>
-                        <option value="Torsdag">Torsdag</option>
-                        <option value="Fredag">Fredag</option>
-                      </select>
+    <div class="lightbox hidden" id="lightbox">
+        <div class="popup" id="myForm">
+            <div class="popup-header">
+                <img src="img\close-icon.png" alt="" class="closeIcon" id="closeIcon">
+            </div>
+            <h1 class="centeredText bluetext">Datum</h1>
+
+            <div class="popup-items bluetext">
+                <div class="popupSquare">
+                    <div class="margintop">
+                        <label for="name"><b>Dag*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="name"><b>Starttid*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="email"><b>Längd*:</b></label>
+                    </div>
+                    <div class="margintop">
+                        <label for="name"><b>Kategori*:</b></label>
+                    </div>
                 </div>
-                <div class="margintop5">
-                    <select name="startimeh" id="startTimeHour">
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                      </select>
-                      <select name="startimem" id="startTimeMinute">
-                        <option value="00">00</option>
-                        <option value="15">15</option>
-                        <option value="30">30</option>
-                        <option value="45">45</option>
-                      </select>
-                </div>
-                <div class="margintop5">
-                    <select name="startimem" id="selectedDuration">
-                        <option value="15">15 min</option>
-                        <option value="30">30 min</option>
-                        <option value="45">45 min</option>
-                        <option value="60">60 min</option>
-                      </select>
-                </div>
-                <div class="margintop5">
-                    <select name="category" id="selectedCategory">
-                        <option value="Läkarmottagning">Läkarmottagning</option>
-                        <option value="Hälsokontroll">Hälsokontroll</option>
-                        <option value="Intyg">Intyg</option>
-                        <option value="Vaccination">Vaccination</option>
-                        <option value="Migrän">Migrän</option>
-                        <option value="Överdriven svettning">Överdriven svettning</option>
-                        <option value="Övrigt">Övrigt</option>
-                      </select>
+
+                <div class="popupInput">
+                    <div class="margintop5">
+                        <select name="day" id="selectedDay">
+                            <option value="Måndag">Måndag</option>
+                            <option value="Tisdag">Tisdag</option>
+                            <option value="Onsdag">Onsdag</option>
+                            <option value="Torsdag">Torsdag</option>
+                            <option value="Fredag">Fredag</option>
+                        </select>
+                    </div>
+                    <div class="margintop5">
+                        <select name="startimeh" id="startTimeHour">
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                        </select>
+                        <select name="startimem" id="startTimeMinute">
+                            <option value="00">00</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="45">45</option>
+                        </select>
+                    </div>
+                    <div class="margintop5">
+                        <select name="startimem" id="selectedDuration">
+                            <option value="15">15 min</option>
+                            <option value="30">30 min</option>
+                            <option value="45">45 min</option>
+                            <option value="60">60 min</option>
+                        </select>
+                    </div>
+                    <div class="margintop5">
+                        <select name="category" id="selectedCategory">
+                            <option value="Läkarmottagning">Läkarmottagning</option>
+                            <option value="Hälsokontroll">Hälsokontroll</option>
+                            <option value="Intyg">Intyg</option>
+                            <option value="Vaccination">Vaccination</option>
+                            <option value="Migrän">Migrän</option>
+                            <option value="Överdriven svettning">Överdriven svettning</option>
+                            <option value="Övrigt">Övrigt</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class = "kommentar bluetext" id="comment">
-            <label for="name" style="margin-left:25%;"><b>Övrig kommentar:</b></label>
-        </div>
-        <div>
-            <input class="input" type="text" name="name" required style="height:12vh;width:15vw;margin-left:25%">
-        </div>
-        <div class="vertical-center">
-            <button type="submit vertical-center" class="btn">BOKA</button>
+            <div class="kommentar bluetext" id="comment">
+                <label for="name" style="margin-left:25%;"><b>Övrig kommentar:</b></label>
+            </div>
+            <div>
+                <input class="input" type="text" name="name" required style="height:12vh;width:15vw;margin-left:25%">
+            </div>
+            <div class="vertical-center">
+                <button type="submit" class="btn" id="postBtn">LÄGG TILL</button>
+            </div>
         </div>
     </div>
 
     <footer>
         <a href="startpage.html">
             <button class="back-button">
-                 TILLBAKA
+                TILLBAKA
             </button>
         </a>
         <div class="progress-container"></div>
     </footer>
 </body>
+
 </html>
