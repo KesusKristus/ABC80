@@ -19,13 +19,10 @@ for (let index = 0; index < jsonData.categories.length; index++) {
     const catH2 = document.createElement("h2");
     catH2.className = "category-name";
 
-    const catImg = document.createElement("img");
-    catImg.src = "img\right_arrow.png";
-    catImg.className = "category";
 
     catH2.innerHTML = category.title;
     catDiv.appendChild(catH2);
-    catDiv.appendChild(catImg);
+
 
     if(category.href) {
         catDiv.addEventListener("click", () => window.location.href = category.href)

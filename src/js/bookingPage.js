@@ -28,8 +28,11 @@ window.onload = async () => {
     bookingDiv.id = booking.title;
     bookingDiv.className = "timeslot"
 
-    const bookingTitle = document.createElement("h2");
+    const bookingTitle = document.createElement("p");
     const bookingTime = document.createElement("p");
+    bookingTitle.className = "bookingTitle";
+    bookingTime.className = "bookingTime";
+    
 
     bookingTitle.innerHTML = booking.title;
     bookingTime.innerHTML = booking.startTimeHour;
