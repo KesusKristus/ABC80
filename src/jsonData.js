@@ -22,7 +22,7 @@ export default {
         },
         {
             "title": "Överdriven svettning",
-            "desc": "Botox är en effektiv, enkel och erkänd behandlingsmetod för att behandla besvärande svettning Botox blockerar de nervsignaler som går till svettkörtlarna.Behandlingen går fort att utföra med tunna nålar och smärtan i samband med detta är i regel minimal."
+            "desc": "Botox är en effektiv, enkel och erkänd behandlingsmetod för att behandla besvärande svettning Botox blockerar de nervsignaler som går till svettkörtlarna.Behandlingen går fort att utföra med tunna nålar och smärtan i samband med detta är i regel minimal. Pris: från 2500kr (beroende på area)"
         },
     ]
 }
