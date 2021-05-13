@@ -419,3 +419,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+.book-button:disabled{
+    background-color: grey;
+}
