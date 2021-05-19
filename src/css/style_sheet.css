@@ -40,7 +40,7 @@ a {
 .categories{
     flex-direction: row;
     display: flex;
-    background-color: #d9FFFF;
+    background-color: whitesmoke;
     height: 10vh;
     width: 35vw;
     border: 2px #4267B2 solid;
@@ -109,6 +109,10 @@ Bilder? ändra namn
 
 .description-title{
     margin-top: 10vh;
+}
+
+.description-text{
+    text-align: center;
 }
 
 footer{
@@ -206,9 +210,9 @@ footer{
     margin: auto;
    /* left: 25vw;
     top: 25vh; */
-    width: 30%; /* Full width */
-    height: 60%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 35%; /* Full width */
+    height: 70%; /* Full height */
+    overflow:hidden; /* Enable scroll if needed */
     /* background-color: rgb(0,0,0);  Fallback color */
     /* background-color: rgba(0,0,0,0.4);  Black w/ opacity */
     background-color: #FFFFFF;
@@ -302,7 +306,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    align-items: flex-start;
+    align-items: center;
+    
 }
 
 .next-button{
@@ -365,6 +370,7 @@ footer{
     overflow: auto;
 }
 
+
 .closeIcon{
     height: 32px;
     width: 32px;
@@ -391,6 +397,12 @@ footer{
     justify-content: center;
     margin-top: 1%;
 }
+
+.timeslot:hover{
+    background-color: #5687e9;
+    color: white;
+}
+
 .bookingTitle{
     font-size: smaller;
     margin: 0px;

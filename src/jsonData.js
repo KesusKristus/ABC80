@@ -6,7 +6,7 @@ export default {
         },
         {
             "title": "Hälsokontroll",
-            "desc": "En hälsoundersökning innebär: EKG, blodtryck, blodprover såsom blodfetter, prostataprov, blodsocker, sänka, sköldkörtelhormon, lever- och njurprover, blodvärde, kalk, lungfunktionsundersökning, läkarundersökning. Pris: 2600kr",
+            "desc": "En hälsoundersökning innebär: EKG, blodtryck, blodprover såsom blodfetter, prostataprov, blodsocker, sänka, sköldkörtelhormon, lever- och njurprover, blodvärde, kalk, lungfunktionsundersökning, läkarundersökning. <br> Pris: 2600kr",
         },
         {
             "title": "Intyg",
@@ -22,7 +22,7 @@ export default {
         },
         {
             "title": "Överdriven svettning",
-            "desc": "Botox är en effektiv, enkel och erkänd behandlingsmetod för att behandla besvärande svettning Botox blockerar de nervsignaler som går till svettkörtlarna.Behandlingen går fort att utföra med tunna nålar och smärtan i samband med detta är i regel minimal. Pris: från 2500kr (beroende på area)"
+            "desc": "Botox är en effektiv, enkel och erkänd behandlingsmetod för att behandla besvärande svettning. Botox blockerar de nervsignaler som går till svettkörtlarna.Behandlingen går fort att utföra med tunna nålar och smärtan i samband med detta är i regel minimal. <br> Pris: från 2500kr (beroende på area)"
         },
     ]
 }

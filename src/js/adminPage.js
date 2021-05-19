@@ -36,8 +36,22 @@ window.onload = async () => {
     bookingTitle.className = "bookingTitle";
     bookingTime.className = "bookingTime";
 
+    let endMinute = parseInt(booking.startTimeMinute) + parseInt(booking.duration);
+    let endHour;
+    if(endMinute >= 60){
+      endHour = (parseInt(booking.startTimeHour) + 1).toString();
+    endMinute = (endMinute % 60).toString();
+    } else {
+      endHour = booking.startTimeHour;
+      endMinute = endMinute.toString();
+    }
+
+    let displayTime;
+    
+    displayTime = booking.startTimeHour + ":" + booking.startTimeMinute + " - " + endHour + ":" + endMinute;
+
     bookingTitle.innerHTML = booking.title;
-    bookingTime.innerHTML = booking.startTimeHour;
+    bookingTime.innerHTML = displayTime;
 
     bookingDiv.appendChild(bookingTitle);
     bookingDiv.appendChild(bookingTime);
