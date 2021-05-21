@@ -9,8 +9,9 @@ window.onload = async () => {
     },
   })
 
-  const bookings = await res.json()
+  let bookings = await res.json()
 
+  bookings = bookings.sort((a, b) => a .startTimeHour - b.startTimeHour)
   const availableBookings = bookings.filter(booking => !booking.booked)
 
   // Samma gamla skit för att generara sakerna
@@ -81,6 +82,7 @@ window.onload = async () => {
   }
 
   document.getElementById("bookBtn").addEventListener("click", (e) => handleBook(e))
+  document.getElementById("closeIcon").addEventListener("click", () => handleClick())
 
 }
 
