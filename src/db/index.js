@@ -80,6 +80,16 @@ app.put('/booking', (req, res) => {
   res.status(200).send(bookings)
 })
 
+app.post('/login', (req, res) => {
+  const admin = require('./db/Admin.json')
+
+  if(req.body.username == admin.username && req.body.password == admin.password){
+    return res.sendStatus(200)
+  }
+
+  return res.status(401).send("Fel användarnamn eller lösenord.")
+})
+
 // Startar serveren och gör så att den lyssnar på porten 3000 (kan vara en annan port om man vill)
 app.listen(3000)
 

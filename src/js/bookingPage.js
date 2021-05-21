@@ -96,14 +96,15 @@ const handleBook = async (e) => {
   }
 }
 
+
 const handleClick = (booking = undefined) => {
 
-  const popup = document.getElementById("myForm")
-
-  if (popup.className == "popup") {
-    popup.className = "popup hidden";
+  const lightbox = document.getElementById("lightboxBooking")
+  
+  if (lightbox.className == "lightbox") {
+    lightbox.className = "lightbox hidden";
   } else {
-    popup.className = "popup";
+    lightbox.className = "lightbox"
   }
 
   selectedBooking = booking;

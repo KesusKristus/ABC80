@@ -49,4 +49,5 @@ const handleClick = (category) => {
     }
         
     document.getElementById(category.title).className = "categories selected";
+    document.getElementById("book-button").disabled = false;
 }
