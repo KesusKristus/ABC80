@@ -1,20 +1,6 @@
+
 [
 
-    {
-        "title": "Vaccination",
-        "weekNr": "17",
-        "weekDay": "Onsdag",
-        "startTimeHour": 8,
-        "startTimeMinute": 0,
-        "duration": 1,
-        "booked": true,
-        "id": 7,
-        "firstName": "",
-        "lastName": "",
-        "email": "",
-        "phoneNumber": "",
-        "comment": ""
-    },
     {
         "title": "Intyg",
         "weekNr": "17",
@@ -119,16 +105,6 @@
         "duration": "15",
         "booked": false,
         "id": 16
-    },
-    {
-        "title": "Läkarmottagning",
-        "weekNr": "17",
-        "weekDay": "Fredag",
-        "startTimeHour": "8",
-        "startTimeMinute": "00",
-        "duration": "15",
-        "booked": false,
-        "id": 17
     },
     {
         "title": "Läkarmottagning",
@@ -311,3 +287,4 @@
         "phoneNumber": ""
     }
 ]
+

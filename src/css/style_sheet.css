@@ -6,9 +6,18 @@ body {
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #4267B2;
     height : 10vh;
-    width : 100vw;
+    width : calc(100vw - 6rem);
+    padding: 0 3rem;
+}
+
+.adminLink {
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
 a {
@@ -429,4 +438,22 @@ footer{
     background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100vw;
+}
+
+.loginMain {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.loginDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-button:disabled{
+    background-color: grey;
 }
