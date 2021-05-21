@@ -2,21 +2,18 @@ export default {
     "categories": [
         {
             "title": "Läkarmottagning",
-            "desc": "Vi är en privat läkarmottagning ansluten till västra götalandsregion. ",
             "href": "./LäkarmottagningPage.html"
         },
         {
             "title": "Hälsokontroll",
-            "desc": "Vi är en privat läkarmottagning ansluten till västra götalandsregion. \nDu är välkommen att besöka oss oavsett vilken vårdcentral du är listad på. \nDet kostar 300 kr för läkarbesök 100 kr för distriktsköterskebesök barn under 20 år och äldre över 85 år gratis, frikort gäller.",
+            "desc": "En hälsoundersökning innebär: EKG, blodtryck, blodprover såsom blodfetter, prostataprov, blodsocker, sänka, sköldkörtelhormon, lever- och njurprover, blodvärde, kalk, lungfunktionsundersökning, läkarundersökning. <br> Pris: 2600kr",
         },
         {
             "title": "Intyg",
-            "desc": "jag heter malin",
             "href" : "./IntygPage.html"
         },
         {
             "title": "Vaccination",
-            "desc": "gabriel e dum",
             "href" : "./VaccinationerPage.html"
         },
         {
@@ -25,7 +22,7 @@ export default {
         },
         {
             "title": "Överdriven svettning",
-            "desc": "jag svettas"
+            "desc": "Botox är en effektiv, enkel och erkänd behandlingsmetod för att behandla besvärande svettning. Botox blockerar de nervsignaler som går till svettkörtlarna.Behandlingen går fort att utföra med tunna nålar och smärtan i samband med detta är i regel minimal. <br> Pris: från 2500kr (beroende på area)"
         },
     ]
 }
